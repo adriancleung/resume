@@ -1,4 +1,4 @@
-nanme: Build Resume
+name: Build Resume
 
 on:
   push:
