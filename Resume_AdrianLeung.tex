@@ -1,0 +1,201 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage{tabularx}
+\usepackage{times}
+\usepackage[letterpaper, hmargin={1cm}, vmargin={1cm}]{geometry}
+\usepackage[pdftex, pdfauthor={Adrian Leung}, pdftitle={Adrian Leung - Resume}, pdfproducer={Adrian Leung}, pdfcreator={Adrian Leung}]{hyperref}
+
+\hypersetup{colorlinks=true, urlcolor=black}
+\urlstyle{same}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\newenvironment{compactList}
+{
+  \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+}
+{\end{itemize}}
+
+\title{Adrian Leung - Resume}
+\author{Adrian Leung}
+\date{\today}
+
+
+
+\begin{document}
+
+% Header
+\begin{tabularx}{\textwidth}
+  {
+    >{\raggedright\arraybackslash}X
+    >{\raggedleft\arraybackslash}X
+  }
+  \Large\textbf{Adrian Leung}                                             & \href{mailto:adrian.leung@ualberta.ca}{adrian.leung@ualberta.ca} \\
+  \href{https://github.com/adriancleung}{https://github.com/adriancleung} & Cell: \href{tel:780.901.7155}{780.901.7155}                      \\
+  \href{https://adrianleung.dev}{https://adrianleung.dev}                 &                                                                  \\
+\end{tabularx}
+\vspace{-15pt}
+
+% Education
+\begin{center}
+  \textbf{Education}
+  \noindent\rule[10pt]{0.9\paperwidth}{0.4pt}
+\end{center}
+\vspace{-20pt}
+\begin{tabularx}{\textwidth}
+  {
+    >{\raggedright\arraybackslash}X
+    >{\raggedleft\arraybackslash}X
+  }
+  \textbf{University of Alberta} & Graduating December 2022 \\
+\end{tabularx}
+\vspace{-20pt}
+\begin{itemize}
+  \item Bachelor of Science, Computing Science Major and Business Minor
+\end{itemize}
+\vspace{-15pt}
+
+% Technical Skills
+\begin{center}
+  \textbf{Technical Skills}
+  \noindent\rule[10pt]{0.9\paperwidth}{0.4pt}
+\end{center}
+\vspace{-30pt}
+\begin{compactList}
+  \item Language: JavaScript/TypeScript, Python, Java, PHP, HTML/CSS, C, VBScript, Batch Script
+  \item Library/Framework: Firebase, React Native, ExpressJS, React, Laravel, Electron
+  \item Runtime Environment: NodeJS
+  \item Architecture: MIPS
+  \item Database:PostgreSQL, MySQL, Oracle, SQLite, NoSQL (Cloud Firestore)
+  \item Development Platforms: Unix, Docker, Windows, AWS, Heroku, Google Cloud, Android, iOS
+\end{compactList}
+\vspace{-15pt}
+
+% Work Experience
+\begin{center}
+  \textbf{Work Experience}
+  \noindent\rule[10pt]{0.9\paperwidth}{0.4pt}
+\end{center}
+\vspace{-20pt}
+\begin{tabularx}{\textwidth\setlength{\extrarowheight}{5pt}}
+  {
+    >{\hsize=1.5\hsize\raggedright\arraybackslash}X
+    >{\hsize=0.5\hsize\raggedleft\arraybackslash}X
+  }
+  \textbf{Student Software Developer} $\vert$ Arcurve                     & May 2020 – August 2021 \\
+  \multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}
+  {
+    \begin{minipage}{0.85\paperwidth}
+      \begin{compactList}
+        \item Develop, test, and implement new software features for a multi-million-dollor project
+        \item Migrate existing applications to cloud infrastructures which increased reliability and performance, and decreased operational costs
+        \item Create comparative testing platforms between existing and new applications to ensure data reliability and reduce manual testing
+        \item Support in the migration of data between legacy systems to new systems
+        \item Optimize existing applications to improve system performance
+      \end{compactList}
+    \end{minipage}
+  }
+  \\
+  \textbf{Desktop Services Intern} $\vert$ Precision Drilling Corporation & May – August 2019      \\
+  \multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}
+  {
+    \begin{minipage}{0.85\paperwidth}
+      \begin{compactList}
+        \item Develop and implement automation tools to streamline work and available resources
+        \item Assist with the infrastructure upgrade and replacement project
+        \item Imaging and configuration of technological infrastructures
+        \item Utilize coding and analytical skills to improve efficiency of other IT-related responsibilities
+        \item Support migration of data to ensure data reliability
+      \end{compactList}
+    \end{minipage}
+  }
+  \\
+  \textbf{Hardware Maintenance Summer Student} $\vert$ City of Edmonton   & May – August 2018      \\
+  \multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}
+  {
+    \begin{minipage}{0.85\paperwidth}
+      \begin{compactList}
+        \item Provide direct, one on one customer support in person, or over the phone to quickly identify and resolve customer computer problems
+        \item Respond in a timely manner to incoming requests for customer service, and maintains contact with the end user to ensure the effectiveness of the solution
+        \item Monitor and support audiovisual equipment in downtown City of Edmonton towers to ensure technology is working properly and customers are satisfied and feel supported
+      \end{compactList}
+    \end{minipage}
+  }
+\end{tabularx}
+\vspace{-10pt}
+
+% Projects
+\begin{center}
+  \textbf{Projects}
+  \noindent\rule[10pt]{0.9\paperwidth}{0.4pt}
+\end{center}
+\vspace{-20pt}
+\begin{tabularx}{\textwidth\setlength{\extrarowheight}{5pt}}
+  {
+    >{\raggedright\arraybackslash}X
+  }
+  \textbf{Rescue Food App: Gamification Module} \raisebox{0.25ex}{\scriptsize$\vert$ PHP, MySQL, TypeScript, React Native, React, Docker, iOS, Android} \\
+  \vspace{-20pt}
+  \begin{compactList}
+    \item Re-developed a self-contained points and rewards gamificatio nmodule for the redesigned Resuce Food App
+  \end{compactList}
+  \vspace{-10pt}
+  \textbf{pushie} \raisebox{0.25ex}{\scriptsize$\vert$ React Native, ExpressJS, Firebase, iOS, Android}                                                 \\
+  \vspace{-20pt}
+  \begin{compactList}
+    \item A simple real-time push notification iOS and Android app for your applications or services
+  \end{compactList}
+  \vspace{-10pt}
+  \textbf{vibes} \raisebox{0.25ex}{\scriptsize$\vert$ Android, Firebase, NoSQL (Cloud Firestore)}                                                       \\
+  \vspace{-20pt}
+  \begin{compactList}
+    \item A real-time, Instagram-like app used to share moods, locations, and pictures in a social network
+  \end{compactList}
+\end{tabularx}
+\vspace{-20pt}
+
+% Volunteer Experience
+\begin{center}
+  \textbf{Volunteer Expereince}
+  \noindent\rule[10pt]{0.9\paperwidth}{0.4pt}
+\end{center}
+\vspace{-20pt}
+\begin{tabularx}{\textwidth\setlength{\extrarowheight}{3pt}}
+  {
+    >{\raggedright\arraybackslash}X
+    >{\raggedleft\arraybackslash}X
+  }
+  \textbf{Audio Visual Lead}     & 2016 – Present \\
+  \multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}
+  {
+    \begin{minipage}{0.85\paperwidth}
+      \begin{compactList}
+        \item Prepare audio and visual equipment for various live events and settings
+      \end{compactList}
+    \end{minipage}
+  }
+  \\
+  \textbf{Grade Counsellor}      & 2017 – 2020    \\
+  \multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}
+  {
+    \begin{minipage}{0.85\paperwidth}
+      \begin{compactList}
+        \item Mentoring and leading an active and educational program for various student groups
+      \end{compactList}
+    \end{minipage}
+  }
+  \\
+  \textbf{Seeds of Grace Member} & 2017 – 2020    \\
+  \multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}
+  {
+    \begin{minipage}{0.85\paperwidth}
+      \begin{compactList}
+        \item Participate in volunteering activities such as fundraising, preparing care packages and outreach
+      \end{compactList}
+    \end{minipage}
+  }
+\end{tabularx}
+
+\end{document}

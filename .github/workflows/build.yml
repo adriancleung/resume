@@ -1,0 +1,27 @@
+nanme: Build Resume
+
+on:
+  push:
+    branches: [master]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Up Git Repository
+        uses: actions/checkout@v2
+
+      - name: Compile LaTeX Document
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: Resume_AdrianLeung.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Resume
+          path: Resume_AdrianLeung.pdf
