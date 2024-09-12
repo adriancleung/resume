@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set Up Git Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Compile LaTeX Document
         uses: dante-ev/latex-action@latest
@@ -27,7 +27,7 @@ jobs:
           curl -X POST -H "X-Api-Key: $API_KEY" -F "resume=@Resume_AdrianLeung.pdf" https://api.adrianleung.dev/resume
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: Resume
           path: Resume_AdrianLeung.pdf
